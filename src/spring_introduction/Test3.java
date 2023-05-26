@@ -12,11 +12,20 @@ public class Test3 {
          */
 
         //DI spring
+        /*
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Pet pet = context.getBean("myPet", Pet.class);
         context.close();
 
         Person person = new Person(pet);
+        person.callYourPet();
+         */
+
+        //DI spring width constructor
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Person person = context.getBean("myPerson", Person.class);
+        context.close();
+
         person.callYourPet();
     }
 }
