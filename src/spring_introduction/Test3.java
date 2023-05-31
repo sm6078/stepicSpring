@@ -21,11 +21,13 @@ public class Test3 {
         person.callYourPet();
          */
 
-        //DI spring width constructor
+        //DI spring width constructor, setters, strings
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Person person = context.getBean("myPerson", Person.class);
         context.close();
 
         person.callYourPet();
+        System.out.println("Name: " + person.getSurname());
+        System.out.println("Age: " + person.getAge());
     }
 }
