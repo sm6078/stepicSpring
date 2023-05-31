@@ -1,11 +1,15 @@
 package spring_introduction;
 
 public class Person {
-    private final Pet pet;
+    private Pet pet;
 
+//    public Person(Pet pet) {
+//        System.out.println("Person bean is created");
+//        this.pet = pet;
+//    }
 
-    public Person(Pet pet) {
-        System.out.println("Person bean is created");
+    public void setPet(Pet pet) {
+        System.out.println("Class Person: set pet");
         this.pet = pet;
     }
 
