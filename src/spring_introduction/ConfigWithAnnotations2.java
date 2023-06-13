@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ConfigWithAnnotations2 {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context =
+        var context =
                 new ClassPathXmlApplicationContext("applicationContext4.xml");
 
         Person person = context.getBean("personBean", Person.class);
