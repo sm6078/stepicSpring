@@ -10,15 +10,15 @@ public class Person {
     /*@Autowired
     @Qualifier("cat")*/
     private Pet pet;
-    @Value("${person.surname}")
+    //@Value("${person.surname}")
     //@Value("Hohlov")
     private String surname;
-    @Value("${person.age}")
+    //@Value("${person.age}")
     //@Value("76")
     private int age;
 
     @Autowired
-    public Person(@Qualifier("cat") Pet pet) {
+    public Person(@Qualifier("dog") Pet pet) {
         System.out.println("Person bean is created");
         this.pet = pet;
     }
