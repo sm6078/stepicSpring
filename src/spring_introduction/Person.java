@@ -18,7 +18,7 @@ public class Person {
     private int age;
 
     @Autowired
-    public Person(@Qualifier("dog") Pet pet) {
+    public Person(@Qualifier("cat") Pet pet) {
         System.out.println("Person bean is created");
         this.pet = pet;
     }
