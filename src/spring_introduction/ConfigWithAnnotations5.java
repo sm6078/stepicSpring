@@ -10,6 +10,8 @@ public class ConfigWithAnnotations5 {
         Dog myDog = context.getBean("dog", Dog.class);
         Dog yourDog = context.getBean("dog", Dog.class);
 
+        myDog.say();
+
         context.close();
 
         System.out.println("Переменные ссылаются на один и тот же объект ? " + (myDog == yourDog));
