@@ -1,5 +1,6 @@
 package spring_introduction;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("personBean")
@@ -7,10 +8,10 @@ public class Person {
     /*@Autowired
     @Qualifier("cat")*/
     private Pet pet;
-    //@Value("${person.surname}")
+    @Value("${person.surname}")
     //@Value("Hohlov")
     private String surname;
-    //@Value("${person.age}")
+    @Value("${person.age}")
     //@Value("76")
     private int age;
 

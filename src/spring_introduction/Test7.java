@@ -10,7 +10,9 @@ public class Test7 {
         //cat.say();
 
         Person person = context.getBean("personBean", Person.class);
-        person.callYourPet();
+        System.out.println("Surname:" + person.getSurname());
+        System.out.println("Age:" + person.getAge());
+        //person.callYourPet();
 
         context.close();
     }
